@@ -61,34 +61,13 @@ repository files.
 
 ## Install
 
-The committed `dist/session-handoff.skill` archive contains the same self-contained skill
-folder as `session-handoff/`: `SKILL.md` plus `scripts/repo-state.sh`. No build step.
+Download `dist/session-handoff.skill` (the badge above) and unpack it into the skills folder of
+your agent, or clone this repository and link the `session-handoff/` folder there. The archive
+holds the same self-contained folder as `session-handoff/`: `SKILL.md` plus
+`scripts/repo-state.sh`, no build step.
 
-With the [skills](https://skills.sh) CLI:
-
-```bash
-npx skills add https://github.com/nyxandro/session-handoff-skill --skill session-handoff
-```
-
-Into Claude Code by hand:
-
-```bash
-curl -L -o /tmp/session-handoff.skill https://github.com/nyxandro/session-handoff-skill/raw/main/dist/session-handoff.skill
-rm -rf ~/.claude/skills/session-handoff
-unzip /tmp/session-handoff.skill -d ~/.claude/skills
-```
-
-Into OpenCode by hand:
-
-```bash
-rm -rf ~/.config/opencode/skills/session-handoff
-unzip /tmp/session-handoff.skill -d ~/.config/opencode/skills
-```
-
-Or clone this repository and symlink `session-handoff/` into the skills folder of your agent.
-
-`scripts/repo-state.sh` needs `git`; `gh` is optional and is used only to list open pull
-requests. The script is read-only and never contacts the remote.
+The script needs `git`; `gh` is optional and is used only to list open pull requests. It is
+read-only and never contacts the remote.
 
 ## Repository layout
 
