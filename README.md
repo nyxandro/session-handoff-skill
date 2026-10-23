@@ -1,9 +1,9 @@
 # Session Handoff Skill
 
-[![Download Skill](https://img.shields.io/badge/Download-session--handoff.skill-blue?style=for-the-badge)](https://github.com/nyxandro/session-handoff-skill/raw/main/dist/session-handoff.skill)
+[![Download Session Handoff Skill](https://img.shields.io/badge/Download-session--handoff.skill-blue?style=for-the-badge)](https://github.com/nyxandro/session-handoff-skill/raw/main/dist/session-handoff.skill)
 
-A skill for Claude Code and OpenCode that carries unfinished work from one agent session to the
-next with a single document.
+A session handoff skill for Claude Code and OpenCode that carries unfinished work from one agent
+session to the next with a single document.
 
 Agent sessions run out of context or get compacted, and the work continues in a fresh one. Ask
 the agent to "write a prompt for the new session" and every time it assembles something
@@ -60,6 +60,17 @@ project rules, retold code, logs, tool calls, stack traces, and copies of what a
 repository files.
 
 ## Install
+
+**Claude Code, as a plugin**, from [nyxandro/skills](https://github.com/nyxandro/skills), the
+catalog of my skills:
+
+```text
+/plugin install session-handoff --marketplace nyxandro/skills
+```
+
+Use one way or the other: with both, Claude Code loads the skill twice.
+
+**Any agent, as a skill folder:**
 
 Download `dist/session-handoff.skill` (the badge above) and unpack it into the skills folder of
 your agent, or clone this repository and link the `session-handoff/` folder there. The archive
