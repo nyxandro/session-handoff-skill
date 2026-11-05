@@ -12,6 +12,8 @@ description: >
   session with "I'm in a new session, here's the context", "let's continue, here's the
   document", "study it and let's discuss", or pastes a document whose first line names
   session-handoff. The owner may phrase any of this in another language; match on meaning.
+metadata:
+  version: "1.0.0"
 ---
 
 # Session handoff
