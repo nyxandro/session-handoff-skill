@@ -1,10 +1,9 @@
 ---
 name: session-handoff
 description: >
-  Hand unfinished work from one agent session to the next with a single document: at the end
-  of a session, write it so the owner can copy the text into the chat of a new session; at the
-  start of a new session, receive such a document, check it against the real repository state,
-  and brief the owner in a few lines. Always use it when the owner asks for a prompt for a new
+  Hands unfinished work from one agent session to the next with a single document, written at
+  the end of a session for the owner to paste into a new one and received at the start of that
+  new session. Always use it when the owner asks for a prompt for a new
   session or for a handoff, in any wording: "write a prompt for a new session", "a detailed
   prompt with every nuance, I'll copy it and send it to the agent", "your context is about to
   run out, write down all the details", "I want to start a new session, write everything down
@@ -13,7 +12,7 @@ description: >
   document", "study it and let's discuss", or pastes a document whose first line names
   session-handoff. The owner may phrase any of this in another language; match on meaning.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Session handoff

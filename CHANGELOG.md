@@ -8,6 +8,14 @@ numbered MAJOR.MINOR.PATCH.
 - **MINOR** (1.1.0) is a new or changed rule, a new document section or a script feature.
 - **MAJOR** (2.0.0) changes the document format or how the receiving side works.
 
+## [1.1.0] - 2026-11-06
+
+### Changed
+
+- The description says what the skill does and when to use it, without retelling the steps of
+  the work. With the steps in the description, the model can follow them and skip the body of the
+  skill, as Superpowers' tests showed. The trigger phrases are unchanged.
+
 ## [1.0.0] - 2026-11-06
 
 The first numbered version. The skill itself is unchanged since `2f94a9c`. This release adds the
